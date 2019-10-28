@@ -1,2 +1,2 @@
 # Personal Website
-Click [here](https://kelvinuknowhu.github.io/kelvinhu.github.io/).
+The repo for my personal website. Link [here](https://kelvinuknowhu.github.io/).
