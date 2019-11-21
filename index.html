@@ -57,13 +57,11 @@
         <!-- Toggle for Mobile Page -->
         <div
           class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="navbar"
           onclick="toggleAside()"
         >
           <i></i>
         </div>
-
+        
         <!-- Side Bar -->
         <aside id="aside" role="complementary" class="border js-fullheight">
           <div class="text-center">
@@ -76,16 +74,16 @@
             </h1>
             <p><strong>Software Engineer</strong></p>
           </div>
-          <nav id="main-menu" role="navigation" class="navbar">
-            <div id="navbar" class="collapse">
+          <nav id="main-menu" role="navigation">
+            <div id="navbar" class="collapse" >
               <ul>
-                <li><a href="#" data-nav-section="about">About</a></li>
-                <li><a href="#" data-nav-section="skills">Skills</a></li>
-                <li><a href="#" data-nav-section="education">Education</a></li>
+                <li><a href="#" data-nav-section="about" onclick="toggleOffAside()">About</a></li>
+                <li><a href="#" data-nav-section="skills" onclick="toggleOffAside()">Skills</a></li>
+                <li><a href="#" data-nav-section="education" onclick="toggleOffAside()">Education</a></li>
                 <li>
-                  <a href="#" data-nav-section="experience">Work Experience</a>
+                  <a href="#" data-nav-section="experience" onclick="toggleOffAside()">Work Experience</a>
                 </li>
-                <li><a href="#" data-nav-section="contact">Contact</a></li>
+                <li><a href="#" data-nav-section="contact" onclick="toggleOffAside()">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -170,6 +168,7 @@
                       <h2>Portfolio</h2>
                     </div>
                     <!-- Start Portfolio -->
+                    <!-- Project 1 -->
                     <a href="https://vimeo.com/251098877">
                       <div
                         class="col-md-3 animate-box"
@@ -180,16 +179,7 @@
                         </div>
                       </div>
                     </a>
-
-                    <div
-                      class="col-md-3 animate-box"
-                      data-animate-effect="fadeInRight"
-                    >
-                      <div class="project color-3">
-                        <h3>HireBot</h3>
-                      </div>
-                    </div>
-
+                    <!-- Project 2  -->
                     <a href="https://vimeo.com/195446900">
                       <div
                         class="col-md-3 animate-box"
@@ -200,7 +190,7 @@
                         </div>
                       </div>
                     </a>
-
+                    <!-- Project 3 -->
                     <a href="https://vimeo.com/149669596">
                       <div
                         class="col-md-3 animate-box"
@@ -211,7 +201,7 @@
                         </div>
                       </div>
                     </a>
-
+                    <!-- Project 4 -->
                     <a href="https://vimeo.com/195184246">
                       <div
                         class="col-md-3 animate-box"
@@ -222,7 +212,7 @@
                         </div>
                       </div>
                     </a>
-
+                    <!-- Project 5  -->
                     <a href="https://vimeo.com/173949679">
                       <div
                         class="col-md-3 animate-box"
@@ -233,7 +223,7 @@
                         </div>
                       </div>
                     </a>
-
+                    <!-- Project 6 -->
                     <div
                       class="col-md-3 animate-box"
                       data-animate-effect="fadeInRight"
@@ -242,6 +232,7 @@
                         <h3>Travel Planning for NYC Taxi Pickups</h3>
                       </div>
                     </div>
+                    <!-- Project 7 -->
                     <div
                       class="col-md-3 animate-box"
                       data-animate-effect="fadeInRight"
@@ -251,6 +242,15 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Project 8 -->
+                  <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="project color-3">
+                        <h3>HireBot</h3>
+                      </div>
+                    </div>
                   <!-- End Portfolio -->
                   <div class="row">
                     <div
@@ -448,7 +448,6 @@
           </section>
 
           <!-- Work Experience -->
-
           <section class="experience" data-section="experience">
             <div class="narrow-content">
               <div class="row">
@@ -565,7 +564,6 @@
           </section>
 
           <!-- Contact -->
-
           <section class="contact" data-section="contact">
             <div class="narrow-content">
               <div class="row">
@@ -592,7 +590,6 @@
           </section>
 
           <!-- Footer -->
-
           <section class="footer" data-section="footer">
             <div class="narrow-content">
               <div class="row">
@@ -644,7 +641,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Counters -->
     <script src="js/jquery.countTo.js"></script>
-
     <!-- Main JS -->
     <script src="js/main.js"></script>
   </body>

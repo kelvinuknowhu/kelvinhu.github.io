@@ -88,7 +88,6 @@ figure figcaption {
   font-family: "Quicksand", Arial, sans-serif;
 }
 
-
 ::-webkit-selection {
   color: #fff;
   background: #2c98f0;
@@ -127,7 +126,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #aside {
     width: calc(100vw);
-    height: auto;
+    height: 100vh;
     transform: translateX(calc(-100vw));
     padding-top: 4em;
     background-color: #f2f3f7;
@@ -1802,6 +1801,11 @@ figure figcaption {
 
 .email {
   background: #f56040;
+  color: white;
+}
+
+.email:hover {
+  background: lightskyblue;
   color: white;
 }
 
