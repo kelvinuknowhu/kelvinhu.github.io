@@ -47,38 +47,36 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    
+    <script src="./main.js"></script>
   </head>
 
   <body>
-    <div id="colorlib-page">
+    <div id="page">
       <div class="container-wrap">
-        <a
-          href="#"
-          class="js-colorlib-nav-toggle colorlib-nav-toggle"
-          data-toggle="collapse"
-          data-target="#navbar"
+        <!-- Toggle for Mobile Page -->
+        <div
+          class="nav-toggle"
           aria-expanded="false"
           aria-controls="navbar"
-          ><i></i
-        ></a>
+          onclick="toggleAside()"
+        >
+          <i></i>
+        </div>
 
         <!-- Side Bar -->
-        <aside
-          id="colorlib-aside"
-          role="complementary"
-          class="border js-fullheight"
-        >
+        <aside id="aside" role="complementary" class="border js-fullheight">
           <div class="text-center">
             <div
               class="author-img"
               style="background-image: url(images/profile.jpg);"
             ></div>
-            <h1 id="colorlib-logo">
+            <h1 id="logo">
               <a href="https://kelvinhu.github.io">Kelvin Hu</a>
             </h1>
             <p><strong>Software Engineer</strong></p>
           </div>
-          <nav id="colorlib-main-menu" role="navigation" class="navbar">
+          <nav id="main-menu" role="navigation" class="navbar">
             <div id="navbar" class="collapse">
               <ul>
                 <li><a href="#" data-nav-section="about">About</a></li>
@@ -98,7 +96,13 @@
           href="https://github.com/kelvinuknowhu/kelvinhu.github.io"
           class="github-corner"
           aria-label="View source on GitHub"
-          ><img src="github.svg" width="80" height="80" />
+          ><img
+            src="images/github.svg"
+            type="image/svg+xml"
+            width="80"
+            height="80"
+            class="github-ribbon"
+          />
         </a>
         <style>
           .github-corner:hover .octo-arm {
@@ -134,10 +138,10 @@
         </style>
 
         <!-- Main Page -->
-        <div id="colorlib-main">
+        <div id="main">
           <!-- About Me -->
-          <section class="colorlib-about" data-section="about">
-            <div class="colorlib-narrow-content">
+          <section class="about" data-section="about">
+            <div class="narrow-content">
               <div class="row">
                 <div class="col-md-12">
                   <div
@@ -272,8 +276,8 @@
 
           <!-- Skills -->
 
-          <section class="colorlib-skills" data-section="skills">
-            <div class="colorlib-narrow-content">
+          <section class="skills" data-section="skills">
+            <div class="narrow-content">
               <div class="row">
                 <div
                   class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -362,8 +366,8 @@
 
           <!-- Education -->
 
-          <section class="colorlib-education" data-section="education">
-            <div class="colorlib-narrow-content">
+          <section class="education" data-section="education">
+            <div class="narrow-content">
               <div class="row">
                 <div
                   class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -445,8 +449,8 @@
 
           <!-- Work Experience -->
 
-          <section class="colorlib-experience" data-section="experience">
-            <div class="colorlib-narrow-content">
+          <section class="experience" data-section="experience">
+            <div class="narrow-content">
               <div class="row">
                 <div
                   class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -562,8 +566,8 @@
 
           <!-- Contact -->
 
-          <section class="colorlib-contact" data-section="contact">
-            <div class="colorlib-narrow-content">
+          <section class="contact" data-section="contact">
+            <div class="narrow-content">
               <div class="row">
                 <div class="col-md-12">
                   <div
@@ -589,8 +593,8 @@
 
           <!-- Footer -->
 
-          <section class="colorlib-footer" data-section="footer">
-            <div class="colorlib-narrow-content">
+          <section class="footer" data-section="footer">
+            <div class="narrow-content">
               <div class="row">
                 <div class="col-md-12">
                   <div
@@ -620,11 +624,11 @@
             </div>
           </section>
         </div>
-        <!-- end:colorlib-main -->
+        <!-- end:main -->
       </div>
       <!-- end:container-wrap -->
     </div>
-    <!-- end:colorlib-page -->
+    <!-- end:page -->
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
