@@ -1,445 +1,647 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kelvin Hu's Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal website of Kelvin Hu" />
+    <meta
+      name="keywords"
+      content="personal website,github,portfolio,projects,software"
+    />
+    <meta name="author" content="Kelvin Hu" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Kelvin Hu's Personal Website</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Personal website of Kelvin Hu" />
-	<meta name="keywords" content="personal website,github,portfolio,projects,software" />
-	<meta name="author" content="Kelvin Hu" />
+    <!--Social Media icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<!--Social Media icons-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/png" href="logo.png" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="icon" type="image/png" href="logo.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+  </head>
 
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-</head>
+  <body>
+    <div id="colorlib-page">
+      <div class="container-wrap">
+        <a
+          href="#"
+          class="js-colorlib-nav-toggle colorlib-nav-toggle"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+          ><i></i
+        ></a>
 
-<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <!-- Side Bar -->
+        <aside
+          id="colorlib-aside"
+          role="complementary"
+          class="border js-fullheight"
+        >
+          <div class="text-center">
+            <div
+              class="author-img"
+              style="background-image: url(images/profile.jpg);"
+            ></div>
+            <h1 id="colorlib-logo">
+              <a href="https://kelvinhu.github.io">Kelvin Hu</a>
+            </h1>
+            <p><strong>Software Engineer</strong></p>
+          </div>
+          <nav id="colorlib-main-menu" role="navigation" class="navbar">
+            <div id="navbar" class="collapse">
+              <ul>
+                <li><a href="#" data-nav-section="about">About</a></li>
+                <li><a href="#" data-nav-section="skills">Skills</a></li>
+                <li><a href="#" data-nav-section="education">Education</a></li>
+                <li>
+                  <a href="#" data-nav-section="experience">Work Experience</a>
+                </li>
+                <li><a href="#" data-nav-section="contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </aside>
 
-			<!-- Side Bar -->
-			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/profile.jpg);"></div>
-					<h1 id="colorlib-logo"><a href="https://kelvinhu.github.io">Kelvin Hu</a></h1>
-					<p><strong>Software Engineer</strong></p>
-				</div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li><a href="#" data-nav-section="about">About</a></li>
-							<li><a href="#" data-nav-section="skills">Skills</a></li>
-							<li><a href="#" data-nav-section="education">Education</a></li>
-							<li><a href="#" data-nav-section="experience">Work Experience</a></li>
-							<li><a href="#" data-nav-section="contact">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
-			</aside>
+        <!-- Github Ribbon -->
+        <a
+          href="https://github.com/kelvinuknowhu/kelvinhu.github.io"
+          class="github-corner"
+          aria-label="View source on GitHub"
+          ><img src="github.svg" width="80" height="80" />
+        </a>
+        <style>
+          .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+          }
 
-			<!-- Github Ribbon -->
-			<a href="https://github.com/kelvinuknowhu/kelvinhu.github.io" class="github-corner"
-				aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250"
-					style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
-					aria-hidden="true">
-					<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-					<path
-						d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-						fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-					<path
-						d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-						fill="currentColor" class="octo-body"></path>
-				</svg></a>
-			<style>
-				.github-corner:hover .octo-arm {
-					animation: octocat-wave 560ms ease-in-out
-				}
+          @keyframes octocat-wave {
+            0%,
+            100% {
+              transform: rotate(0);
+            }
 
-				@keyframes octocat-wave {
+            20%,
+            60% {
+              transform: rotate(-25deg);
+            }
 
-					0%,
-					100% {
-						transform: rotate(0)
-					}
+            40%,
+            80% {
+              transform: rotate(10deg);
+            }
+          }
 
-					20%,
-					60% {
-						transform: rotate(-25deg)
-					}
+          @media (max-width: 500px) {
+            .github-corner:hover .octo-arm {
+              animation: none;
+            }
 
-					40%,
-					80% {
-						transform: rotate(10deg)
-					}
-				}
+            .github-corner .octo-arm {
+              animation: octocat-wave 560ms ease-in-out;
+            }
+          }
+        </style>
 
-				@media (max-width:500px) {
-					.github-corner:hover .octo-arm {
-						animation: none
-					}
+        <!-- Main Page -->
+        <div id="colorlib-main">
+          <!-- About Me -->
+          <section class="colorlib-about" data-section="about">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="col-md-12">
+                      <div class="about-desc">
+                        <h2>About Me</h2>
+                        <hr />
+                        <p style="text-align: justify;">
+                          As a software engineer, my technical skills center
+                          around full-stack development and data science. I
+                          enjoy building software and keeping up with what is
+                          considered as cutting-edge. Besides being a full-time
+                          coder, I have always had a passion for building
+                          products that can provide comfortable experiences,
+                          empower people, and make users feel dignified with the
+                          platform they reside in.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row portfolio">
+                    <div class="col-md-12">
+                      <h2>Portfolio</h2>
+                    </div>
+                    <!-- Start Portfolio -->
+                    <a href="https://vimeo.com/251098877">
+                      <div
+                        class="col-md-3 animate-box"
+                        data-animate-effect="fadeInRight"
+                      >
+                        <div class="project color-2">
+                          <h3>Study Companion Robot</h3>
+                        </div>
+                      </div>
+                    </a>
 
-					.github-corner .octo-arm {
-						animation: octocat-wave 560ms ease-in-out
-					}
-				}
-			</style>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="project color-3">
+                        <h3>HireBot</h3>
+                      </div>
+                    </div>
 
-			<!-- Main Page -->
-			<div id="colorlib-main">
+                    <a href="https://vimeo.com/195446900">
+                      <div
+                        class="col-md-3 animate-box"
+                        data-animate-effect="fadeInRight"
+                      >
+                        <div class="project color-4">
+                          <h3>Spinship!</h3>
+                        </div>
+                      </div>
+                    </a>
 
-				<!-- About Me -->
-				<section class="colorlib-about" data-section="about">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="col-md-12">
-										<div class="about-desc">
-											<h2>About Me</h2>
-											<hr>
-											<p style="text-align: justify;">
-												As a software engineer, my technical skills center around full-stack
-												development and data science. I enjoy building software and keeping up
-												with what is considered as cutting-edge. Besides being a full-time
-												coder, I have always had a passion for building products that can
-												provide
-												comfortable experiences, empower people, and make users feel dignified
-												with the
-												platform they reside in.</p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<h2>Portfolio</h2>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-										<div class="services color-2">
-											<h3>Study Companion Robot</h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-										<div class="services color-3">
-											<h3>HireBot</h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-										<div class="services color-4">
-											<h3>Spinship!</h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-										<div class="services color-1">
-											<h3>Flickr Sharing Network Visualization</h3>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-										<div class="hire">
-											<h2>Hire Me!</h2>
-											<a href="/Resume_Siyuan_(Kelvin)_Hu.pdf" class="btn-hire" style="text-align: center;"
-												target="_blank">Download Resume</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+                    <a href="https://vimeo.com/149669596">
+                      <div
+                        class="col-md-3 animate-box"
+                        data-animate-effect="fadeInRight"
+                      >
+                        <div class="project color-4">
+                          <h3>Motion in Music</h3>
+                        </div>
+                      </div>
+                    </a>
 
-				<!-- Skills -->
+                    <a href="https://vimeo.com/195184246">
+                      <div
+                        class="col-md-3 animate-box"
+                        data-animate-effect="fadeInRight"
+                      >
+                        <div class="project color-1">
+                          <h3>Flickr's Sharing Network Visualization</h3>
+                        </div>
+                      </div>
+                    </a>
 
-				<section class="colorlib-skills" data-section="skills">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<!--	<span class="heading-meta">My Specialty</span> -->
-								<h2>Skills</h2>
-								<hr>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>JavaScript/React/Redux</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Node.js/Express</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>MySQL/MongoDB</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Python/PyTorch</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+                    <a href="https://vimeo.com/173949679">
+                      <div
+                        class="col-md-3 animate-box"
+                        data-animate-effect="fadeInRight"
+                      >
+                        <div class="project color-1">
+                          <h3>Portable Drum Machine</h3>
+                        </div>
+                      </div>
+                    </a>
 
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="project color-1">
+                        <h3>Travel Planning for NYC Taxi Pickups</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="project color-1">
+                        <h3>Home+</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Portfolio -->
+                  <div class="row">
+                    <div
+                      class="col-md-12 animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="hire">
+                        <h2>Hire Me!</h2>
+                        <a
+                          href="/Resume_Siyuan_(Kelvin)_Hu.pdf"
+                          class="btn-hire"
+                          style="text-align: center;"
+                          target="_blank"
+                          >Download Resume</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-				<!-- Education -->
+          <!-- Skills -->
 
-				<section class="colorlib-education" data-section="education">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<h2>Education</h2>
-								<hr>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne">Master of Engineering in Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
-												<div class="panel-body">
-													<p>
-														Graduated from Cornell University in December 2018.
-													</p>
-												</div>
-											</div>
-										</div>
+          <section class="colorlib-skills" data-section="skills">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <h2>Skills</h2>
+                  <hr />
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>JavaScript/React/Redux</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-1"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Node.js/Express</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-2"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>MySQL/MongoDB</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width:100%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Python/PyTorch</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-4"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo">Bachelor of Science in Computer
-														Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
-												<div class="panel-body">
-													<p>
-														Graduated from New York University Shanghai in May 2017.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <!-- Education -->
 
-				<!-- Work Experience -->
+          <section class="colorlib-education" data-section="education">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <h2>Education</h2>
+                  <hr />
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-12 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="fancy-collapse-panel">
+                    <div
+                      class="panel-group"
+                      id="accordion"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a
+                              class="collapsed"
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne"
+                              >Master of Engineering in Computer Science
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne"
+                          class="panel-collapse collapse"
+                          role="tabpanel"
+                        >
+                          <div class="panel-body">
+                            <p>
+                              Graduated from Cornell University in December
+                              2018.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
 
-				<section class="colorlib-experience" data-section="experience">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<h2>Work Experience</h2>
-								<hr>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="timeline-centered">
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-5">
-												<i class="fa fa-code"></i>
-											</div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a
+                              class="collapsed"
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo"
+                              >Bachelor of Science in Computer Science
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo"
+                          class="panel-collapse collapse"
+                          role="tabpanel"
+                        >
+                          <div class="panel-body">
+                            <p>
+                              Graduated from New York University Shanghai in May
+                              2017.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-											<div class="timeline-label">
-												<h2>Uber Advanced Technologies Group<br>
-													<span><strong>Software Engineer I</strong><br>March 2019 -
-														Current | Pittsburgh, PA</span></h2>
-												<p>
-													I am currently working under the AVMaps Applications team and building
-													geospatial web applications to create, support, automate and
-													expedite
-													mapping-related processes in the domain of autonomous vehicles.
-												</p>
-											</div>
-										</div>
-									</article>
+          <!-- Work Experience -->
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
+          <section class="colorlib-experience" data-section="experience">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <h2>Work Experience</h2>
+                  <hr />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="timeline-centered">
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-5">
+                          <i class="fa fa-code"></i>
+                        </div>
 
-											<div class="timeline-icon color-1">
-												<i class="fa fa-code"></i>
-											</div>
+                        <div class="timeline-label">
+                          <h2>
+                            Uber Advanced Technologies Group<br />
+                            <span
+                              ><strong>Software Engineer I</strong><br />March
+                              2019 - Current | Pittsburgh, PA</span
+                            >
+                          </h2>
+                          <p>
+                            I am currently working under the AVMaps Applications
+                            team and building geospatial web applications to
+                            create, support, automate and expedite
+                            mapping-related processes in the domain of
+                            autonomous vehicles.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
-											<div class="timeline-label">
-												<h2>Uber Advanced Technologies Group<br>
-													<span><strong>Software Engineer Intern</strong><br>May 2018 -
-														August 2018 | Pittsburgh, PA</span></h2>
-												<p>
-													I worked under the AVMaps Applications team of Uber's self-driving
-													car division. Designed and implemented map production tools for
-													geographic specialists, such as the street level panorama panel
-													using camera images taken by the in-vehicle cameras and
-													the traffic light labeling tool to collect data for triangulation.
-												</p>
-											</div>
-										</div>
-									</article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-1">
+                          <i class="fa fa-code"></i>
+                        </div>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-2">
-												<i class="fa fa-code"></i>
-											</div>
-											<div class="timeline-label">
-												<h2>Energo Labs<br>
-													<span><strong>Front End Developer Intern</strong><br>January 2017 -
-														April 2017 | Shanghai, China</span></h2>
-												<p>
-													I served as a front-end web developer and worked on the
-													administrative management website for a distributed peer-to-peer
-													energy exchange platform of household electricity to monitor user
-													data, household electricity, and smart grid performance.
-												</p>
-											</div>
-										</div>
-									</article>
+                        <div class="timeline-label">
+                          <h2>
+                            Uber Advanced Technologies Group<br />
+                            <span
+                              ><strong>Software Engineer Intern</strong
+                              ><br />May 2018 - August 2018 | Pittsburgh,
+                              PA</span
+                            >
+                          </h2>
+                          <p>
+                            I worked under the AVMaps Applications team of
+                            Uber's self-driving car division. Designed and
+                            implemented map production tools for geographic
+                            specialists, such as the street level panorama panel
+                            using camera images taken by the in-vehicle cameras
+                            and the traffic light labeling tool to collect data
+                            for triangulation.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
-									<article class="timeline-entry begin animate-box"
-										data-animate-effect="fadeInBottom">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-none">
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-2">
+                          <i class="fa fa-code"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            Energo Labs<br />
+                            <span
+                              ><strong>Front End Developer Intern</strong
+                              ><br />January 2017 - April 2017 | Shanghai,
+                              China</span
+                            >
+                          </h2>
+                          <p>
+                            I served as a front-end web developer and worked on
+                            the administrative management website for a
+                            distributed peer-to-peer energy exchange platform of
+                            household electricity to monitor user data,
+                            household electricity, and smart grid performance.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
 
+                    <article
+                      class="timeline-entry begin animate-box"
+                      data-animate-effect="fadeInBottom"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-none"></div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-				<!-- Contact -->
+          <!-- Contact -->
 
-				<section class="colorlib-contact" data-section="contact">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<h2>Contact</h2>
-									<hr>
-									<p>Please feel free to send me an <strong><a
-												href="mailto:kelvin.hu.siyuan@gmail.com">email</a> at anytime if you
-											have
-											any questions or just want to grab a coffee and talk.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <section class="colorlib-contact" data-section="contact">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <h2>Contact</h2>
+                    <hr />
 
+                    <span
+                      >Please feel free to send me an
+                      <a href="mailto:kelvin.hu.siyuan@gmail.com" class="email"
+                        >email</a
+                      >
+                      at anytime if you have any questions or just want to grab
+                      a coffee.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-				<!-- Footer -->
+          <!-- Footer -->
 
-				<section class="colorlib-footer" data-section="footer">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<div style="text-align: center; font-size: 2em;">
-											<a href="https://www.linkedin.com/in/siyuanhu/" style="color: black;"
-												target="_blank" class="fa fa-linkedin"></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="https://github.com/kelvinuknowhu" style="color: black;"
-												target="_blank" class="fa fa-github"></a></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <section class="colorlib-footer" data-section="footer">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="hire">
+                      <div style="text-align: center; font-size: 2em;">
+                        <a
+                          href="https://www.linkedin.com/in/siyuanhu/"
+                          style="color: black;"
+                          target="_blank"
+                          class="fa fa-linkedin"
+                        ></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a
+                          href="https://github.com/kelvinuknowhu"
+                          style="color: black;"
+                          target="_blank"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end:colorlib-main -->
+      </div>
+      <!-- end:container-wrap -->
+    </div>
+    <!-- end:colorlib-page -->
 
-			</div><!-- end:colorlib-main -->
-		</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-
-
-	<!-- Main JS -->
-	<script src="js/main.js"></script>
-
-</body>
-
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
