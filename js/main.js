@@ -255,7 +255,6 @@
     navigationSection();
 
     mobileMenuOutsideClick();
-    sliderMain();
     stickyFunction();
     owlCrouselFeatureSlide();
   });
