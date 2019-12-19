@@ -2,7 +2,6 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.8;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -36,13 +35,6 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-x {
-  margin-bottom: 1.5em;
-  background-color: darkkhaki;
-  color: black;
-  backface-visibility: visible;
-}
-
 h1,
 h4,
 h5,
@@ -65,36 +57,6 @@ h3 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 200;
   margin: 0 0 30px 0;
-}
-
-figure {
-  margin-bottom: 2.5em;
-  float: left;
-  width: 100%;
-}
-
-figure figcaption {
-  font-size: 16px;
-  width: 80%;
-  margin: 20px auto 0px auto;
-  color: #b3b3b3;
-  font-style: italic;
-  font-family: "Quicksand", Arial, sans-serif;
-}
-
-::-webkit-selection {
-  color: #fff;
-  background: #2c98f0;
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #2c98f0;
-}
-
-::selection {
-  color: #fff;
-  background: #2c98f0;
 }
 
 #page {
@@ -132,6 +94,12 @@ figure figcaption {
   margin-bottom: 30px;
   border-radius: 50%;
   border: 3px solid white;
+}
+
+@media screen and (max-height: 500px) {
+  #aside .author-img {
+    display: none;
+  }
 }
 
 #aside h1 {
@@ -528,13 +496,8 @@ figure figcaption {
   width: 40px;
   height: 40px;
   background: #2c98f0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  -moz-box-shadow: 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
   box-shadow: 0 0 0 5px #f2f3f7;
   line-height: 40px;
   float: left;
@@ -806,9 +769,6 @@ figure figcaption {
   height: 10px;
   content: "";
   background: #2c98f0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
