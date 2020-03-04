@@ -534,6 +534,7 @@ h3 {
   .timeline-entry
   .timeline-entry-inner
   .timeline-icon.color-none {
+  display: none;
   background: #fff;
   width: 20px;
   height: 20px;
