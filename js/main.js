@@ -27,35 +27,12 @@
     }
   };
 
-  var fullHeight = function() {
-    if (!isMobile.any()) {
-      $('.js-fullheight').css('height', $(window).height());
-      $(window).resize(function() {
-        $('.js-fullheight').css('height', $(window).height());
-      });
-    }
-  };
-
   var counter = function() {
     $('.js-counter').countTo({
       formatter: function(value, options) {
         return value.toFixed(options.decimals);
       }
     });
-  };
-
-  var counterWayPoint = function() {
-    if ($('#colorlib-counter').length > 0) {
-      $('#colorlib-counter').waypoint(
-        function(direction) {
-          if (direction === 'down' && !$(this.element).hasClass('animated')) {
-            setTimeout(counter, 400);
-            $(this.element).addClass('animated');
-          }
-        },
-        { offset: '90%' }
-      );
-    }
   };
 
   // Animations
@@ -73,16 +50,7 @@
               setTimeout(
                 function() {
                   var effect = el.data('animate-effect');
-                  if (effect === 'fadeIn') {
-                    el.addClass('fadeIn animated');
-                  } else if (effect === 'fadeInLeft') {
-                    el.addClass('fadeInLeft animated');
-                  } else if (effect === 'fadeInRight') {
-                    el.addClass('fadeInRight animated');
-                  } else {
-                    el.addClass('fadeInUp animated');
-                  }
-
+                  el.addClass('fadeInRight animated slow');
                   el.removeClass('item-animate');
                 },
                 k * 200,
@@ -107,26 +75,6 @@
       } else {
         $this.addClass('active');
         $('body').addClass('offcanvas');
-      }
-    });
-  };
-
-  // Click outside of offcanvass
-  var mobileMenuOutsideClick = function() {
-    $(document).click(function(e) {
-      var container = $('#colorlib-aside, .js-colorlib-nav-toggle');
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('offcanvas')) {
-          $('body').removeClass('offcanvas');
-          $('.js-colorlib-nav-toggle').removeClass('active');
-        }
-      }
-    });
-
-    $(window).scroll(function() {
-      if ($('body').hasClass('offcanvas')) {
-        $('body').removeClass('offcanvas');
-        $('.js-colorlib-nav-toggle').removeClass('active');
       }
     });
   };
@@ -171,63 +119,51 @@
     );
   };
 
-  var owlCrouselFeatureSlide = function() {
-    $('.owl-carousel').owlCarousel({
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      autoplay: true,
-      loop: true,
-      margin: 0,
-      nav: true,
-      dots: false,
-      autoHeight: true,
-      items: 1,
-      navText: [
-        "<i class='icon-arrow-left3 owl-direction'></i>",
-        "<i class='icon-arrow-right3 owl-direction'></i>"
-      ]
-    });
-  };
-
   // When Document is on load, run the following functions.
   $(function() {
-    fullHeight();
     counter();
-    counterWayPoint();
-    contentWayPoint();
     burgerMenu();
     navigationSection();
-    mobileMenuOutsideClick();
-    owlCrouselFeatureSlide();
+    // contentWayPoint();
   });
 })();
 
 function toggleAside() {
   var navToggle = document.getElementsByClassName('nav-toggle')[0];
   var aside = document.querySelector('#aside');
+
+  function handleAnimationEnd() {
+    if (aside.classList.contains('slide-in')) {
+      aside.classList.remove('slide-in');
+    }
+    node.removeEventListener('animationend', handleAnimationEnd);
+  }
+
+  aside.addEventListener('animationend', handleAnimationEnd);
   // Make aside element slide in or out
-  if (!aside.className.includes('active')) {
-    aside.className = 'active';
-    $('#main').hide();
+  if (!aside.classList.contains('active')) {
+    aside.classList.add('active');
+    aside.classList.add('slide-in');
   } else {
-    aside.className = '';
-    $('#main').show();
+    aside.classList.remove('active');
   }
   // Change toggle icon between hamburger and cross
-  if (!navToggle.className.includes('active')) {
-    navToggle.className = 'nav-toggle active';
+  if (!navToggle.classList.contains('active')) {
+    navToggle.classList.add('active');
   } else {
-    navToggle.className = 'nav-toggle';
+    navToggle.classList.remove('active');
   }
 }
 
 function toggleOffAside() {
-  var navToggle = document.getElementsByClassName('nav-toggle')[0];
+  var navToggle = document.querySelector('.nav-toggle');
   var aside = document.querySelector('#aside');
   // Toggle off if aside is active
-  if (aside.className.includes('active')) {
-    aside.className = '';
-    navToggle.className = 'nav-toggle';
-    $('#main').show();
+  if (
+    aside.classList.contains('active') &&
+    navToggle.classList.contains('active')
+  ) {
+    aside.classList.remove('active');
+    navToggle.classList.remove('active');
   }
 }

@@ -70,21 +70,34 @@ h3 {
   width: 300px;
   height: 100vh;
   position: fixed;
-  background-color: #f2f3f7;
+  color: white;
+  /* background-color: #2c98f0; */
+  background-color: #ec5453;
   z-index: 111;
 }
 
 @media screen and (max-width: 768px) {
   #aside {
+    display: none;
     width: calc(100vw);
-    height: 100vh;
-    transform: translateX(calc(-100vw));
     padding-top: 4em;
-    background-color: #f2f3f7;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   #aside.active {
-    transform: translateX(calc(0vw));
+    display: block;
+  }
+  #aside.slide-in {
+    animation: slide-in 0.5s ease-in-out;
+  }
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -93,8 +106,7 @@ h3 {
   height: 150px;
   margin: 0 auto;
   margin-bottom: 30px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 20%;
 }
 
 @media screen and (max-height: 500px) {
@@ -104,8 +116,13 @@ h3 {
 }
 
 #aside h1 {
-  color: #000;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
   font-family: 'Raleway', sans-serif;
+}
+
+#aside p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #aside .position {
@@ -119,14 +136,10 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 0.5em;
-  display: block;
-  width: 100%;
 }
 
 #aside #logo a {
-  display: block;
   text-align: center;
-  color: #000;
   padding-right: 0.3em;
 }
 
@@ -162,7 +175,7 @@ h3 {
 }
 
 #aside #main-menu ul li a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   position: relative;
   padding: 10px 0;
@@ -179,7 +192,7 @@ h3 {
   bottom: 7px;
   left: 0;
   right: 0;
-  background-color: #2c98f0;
+  background-color: #2aebd1;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -187,7 +200,7 @@ h3 {
 
 #aside #main-menu ul li a:hover {
   text-decoration: none;
-  color: black;
+  color: #2aebd1;
 }
 
 #aside #main-menu ul li a:hover:after {
@@ -200,7 +213,7 @@ h3 {
 }
 
 #aside #main-menu ul li.active a {
-  color: #2c98f0;
+  color: #2aebd1;
 }
 
 #aside #main-menu ul li.active a:after {
@@ -269,7 +282,6 @@ h3 {
 }
 
 #main {
-  width: calc(100% - 300px);
   margin-left: 300px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -303,10 +315,8 @@ h3 {
 .experience,
 .skills,
 .education,
-.blog,
 .work,
 .about,
-.installation,
 .project,
 .footer,
 .contact {
@@ -321,10 +331,8 @@ h3 {
   .experience,
   .skills,
   .education,
-  .blog,
   .work,
   .about,
-  .installation,
   .project,
   .contact {
     padding-top: 2em;
@@ -397,7 +405,7 @@ h3 {
 }
 
 .hire {
-  padding: 2em;
+  padding: 1.5em;
   background: #f9bf3f;
 }
 
@@ -1024,14 +1032,9 @@ h3 {
   height: 130px;
 }
 
-.nav-toggle {
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .nav-toggle.active i::before,
 .nav-toggle.active i::after {
-  background: #000;
+  background: white;
 }
 
 .nav-toggle:hover,
@@ -1127,13 +1130,13 @@ h3 {
 }
 
 .nav-toggle {
+  display: none;
   position: fixed;
   left: -5px;
   top: 0px;
   z-index: 1111;
   cursor: pointer;
   opacity: 1;
-  visibility: hidden;
   padding: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1142,8 +1145,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .nav-toggle {
-    opacity: 1;
-    visibility: visible;
+    display: block;
   }
 }
 
