@@ -397,6 +397,11 @@ h3 {
   margin-left: 10px;
 }
 
+.about-text {
+  padding: 25px;
+  background-color: #fff7aabb;
+}
+
 .about-desc h3 {
   font-size: 18px;
   text-transform: uppercase;
@@ -407,6 +412,7 @@ h3 {
 .hire {
   padding: 1.5em;
   background: #f9bf3f;
+  margin: 25px 0;
 }
 
 .hire h2 {
@@ -586,10 +592,6 @@ h3 {
   opacity: 0.4;
   filter: alpha(opacity=40);
   font-size: 16px;
-}
-
-.portfolio {
-  margin-bottom: 80px;
 }
 
 .project {
