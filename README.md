@@ -5,5 +5,5 @@ The repo for my personal website. GitHub Page link [here](https://kelvinuknowhu.
 ### Run on a local computer
 
 ```
-$ http-server
+$ python -m "http.server"
 ```
